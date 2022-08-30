@@ -1,0 +1,298 @@
+@keyframes pisca {
+    0% { opacity:0.2 ; }
+    50% { opacity: 1; }
+    100% { opacity: 0.2; }
+}
+/*configuração*/
+
+*{
+    margin: 0%;
+    padding: 0%;
+    max-width: none;
+    max-height: none;
+
+}
+
+body {
+    background-color: aquamarine;
+    height: 100%;
+    margin: 0%;
+
+}
+.leadtext-muted {
+    text-align: center;
+    font-size: 30px;
+    padding: 25px;
+    color:  rgb(13, 60, 65);
+}
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.foto-perfil {
+    height:25%;
+    width:auto;
+    max-width: 25%;
+    border-radius: 100%;
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+ .d-1-right {
+    height: 20px;
+    width: 50%;
+    
+ }
+ .d-1-right img {
+    height:750px;
+    width: 600px;
+    right:  5%;
+    margin-top: 50px;
+    border-radius: 20px;
+    position:absolute;
+ }
+.jumbotron-heading {
+    text-align: center;
+    font-size: 30px;
+    padding: 25px;
+    color:  white;
+    
+}
+.pisca {
+    animation-name: pisca;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+.navbar-nav {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+    
+}
+
+.navbar-nav li {
+    list-style: none;
+}
+.navbar-nav a {
+    color: blanchedalmond;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: blueviolet;
+}
+.navbar-nav li:hover a {
+    background-color: rgb(164, 98, 12);
+    color: rgb(134, 165, 42);
+}
+ .tex-center {
+    border: 2px solid blue;
+    border-radius: 15px;
+    background-color: aliceblue;
+    width: 1cm;
+    height: 6cm;
+    display: grid;
+    grid-template-columns: repeat(1fr);
+    align-items: center;
+    text-shadow: 2px 2px 5px rgb(65, 61, 143);
+    font-size: 20px;
+    width:100% ;
+    font-family:Arial, Helvetica, sans-serif;
+
+
+}  
+.tex-center h2 {
+    font-size: 2em;
+    text-align: center;
+
+
+}
+
+
+.pessoal {
+    border-radius: 15px;
+    width: 15cm;
+    font-size: 25px;
+    padding: 20px;
+    text-shadow: 2px 2px 5px rgb(98, 70, 196);;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+}
+
+.subtittle {
+    text-align:left;
+    font-size: 25px;
+    padding: 12px;
+    color: rgb(2, 5, 34);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+
+.subtittle li {
+    list-style: none;
+}
+
+.cursos {
+   border-radius: 15px;
+   width: 6cm;
+   height: 4cm;
+   margin: 12px;
+   border: 8px solid rgb(6, 23, 98);
+   background-color: aliceblue;
+   text-shadow: 2px 2px 5px rgb(6, 23, 98);
+    text-align:left;
+
+}
+.cursos li{
+    list-style: none;
+}
+
+.formação {
+    width: 15cm;
+    height: 3,5cm;
+    border-radius: 15px;
+    background-color: aliceblue;
+    border: 8px solid rgb(6, 23, 98);
+    text-align:left;
+    font-size: 25px;
+    padding: 12px;
+    text-shadow: 2px 2px 5px rgb(14, 14, 173);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}    
+.formação li {
+    list-style: none;
+}
+
+
+
+.Depoimentos {
+    border-radius: 15px;
+    width: 15cm;
+    height: 3,5cm;
+    margin: 8px;
+    border: 8px solid rgb(6, 23, 98);
+    background-color: aliceblue;
+    text-shadow: 2px 2px 5px rgb(14, 14, 173);
+}
+.Depoimentos li {
+    font-size: 25px;
+    list-style: none;
+}
+
+.redessociais {
+    display:flex;
+    justify-content: center;
+    width: 155vw;
+    height: 80px;
+    background-color: azure;
+    font-size: 25PX;
+    align-items: center;
+
+}
+.redessociais i {
+    font-size: 1.5em;
+}
+
+.redessociais a {
+    text-decoration: none;
+    padding: 15px 20px;
+    text-align: right;
+}
+
+.redessociais a:hover  {
+    background-color: blanchedalmond;
+    color: black;
+
+}
+
+.redsocial {
+    font-size: 25px;
+    color:black;
+    margin: 2em;
+
+}
+
+.form-container {
+
+    width: 100;
+    height: 100vh;
+    background-image: url(foto//lago\ natural.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+
+ .container-cntt {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 4%;
+ }
+
+ form {
+    background-color: white;
+    max-width: 500px;
+    height: 450px;
+    padding: 40px;
+    border-radius: 20px;
+
+ }
+
+ form h1 {
+
+    text-align: center;
+    font-size: 30px;
+    color: rgb(14, 103, 141);
+ }
+ form p {
+    text-align: center;
+    margin: 20PX 0;
+
+ }
+
+ .input-single {
+    position: relative;
+    margin: 30px 0;
+ }
+
+ .input-single label {
+    position:absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0,2s;
+    cursor: text;
+
+ }
+
+ .input {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid rgb(234, 166, 163);
+    padding: 5px;
+    font-size: 17px;
+    outline: 0;
+ }
+
+ form .input-single .input:focus ~ label,
+ form .input-single .input:valid ~ label {
+    transform: translateY(-24px);
+    font-size: 12px;
+    color: #2d5966;
+ }
+
+ .btn {
+    width: 100%;
+    text-align: center;
+ }
+
+ form input[type=submit]{
+    padding: 10px 40px;
+    border: 0;
+    border-radius: 10px;
+    background-color:royalblue;
+    color: beige;
+    cursor: pointer;
+ }
