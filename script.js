@@ -1,10 +1,16 @@
 //* validando formulario*//
+var contenido = document.querySelector("#api");
+fetch("https://api.github.com/users/angelo-arboleda")
+  .then(function (response) {
+    return response.json();
+  })
 
+const formulario = document.getElementById("formulario")
+const submit = document.getElementById("enviar");
 var input = document.getElementById("input");
 var inputemail = document.getElementById("email-box");
 var nomebox = document.getElementById("nome-box");
 var telbox = document.getElementById("tel-box");
-var submit = document.getElementById("enviar");
 
 function validateemail (e){
 var email = e.target.value;
@@ -19,9 +25,6 @@ const emailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 else{
     inputemail.style.borderColor = "red" 
 }
-
-
-
 }
 
 function validatenome (e){
@@ -50,19 +53,17 @@ function validatetel (e){
     else{
         telbox.style.borderColor = "red"
     }
-}
-
-function validatesubmit (e){
-        var x =
-          document.inputs["input"][("email-box", "nome-box", "tel-box")].value;
-        if (x == "") {
-          console.log(x);
-          return false;
-        }
-        alert("mensagem enviada com sucesso"); 
-}
-
+    }
+    function handlesubmit(e) { 
+      e.preventDefault();
+      alert("Mensagem enviada com sucesso")
+      console.log("click");
+      contato.reset();
+      
+    };
+    
 
 inputemail.addEventListener("input", validateemail);
 nomebox.addEventListener("input", validatenome);
 telbox.addEventListener("input", validatetel);
+enviar.addEventListener("click", handlesubmit);
